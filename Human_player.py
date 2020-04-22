@@ -10,7 +10,6 @@ class HumanPlayer:
         """
         self.color = color
     
-
     def get_move(self, board):
         """
         根据当前棋盘输入人类合法落子位置
