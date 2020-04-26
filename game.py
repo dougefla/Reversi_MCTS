@@ -208,9 +208,9 @@ class Game(object):
 
 if __name__ == '__main__':
     from AIPlayer_AlphaBeta import AIPlayer_AlphaBeta
-    from AIPlayer_MCTS import AIPlayer_MCTS
+    from AIPlayer_MCTS import AIPlayer
 
     x = AIPlayer_AlphaBeta("X")
-    o = AIPlayer_MCTS("O")
+    o = AIPlayer("O")
     game = Game(x, o)
     game.run()

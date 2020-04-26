@@ -6,7 +6,7 @@ from Random_Game import Random_Game
 import math
 import time
 
-timeout = 5
+timeout = 2
 
 # Node类是状态，代表一种局势
 class Node(object):
@@ -184,7 +184,7 @@ class MCTS(object):
             return False
 
         
-class AIPlayer_MCTS:
+class AIPlayer:
     def __init__(self, color):
         self.color = color
 
@@ -206,7 +206,6 @@ class AIPlayer_MCTS:
         root_node = Node()
         root_node.initiate_node_with_board(board)
         action = mcts.MCTS_search(root_node)
-        print(action)
 
         # ------------------------------------------------------------------------
 
